@@ -3,7 +3,6 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="login.css">
     <title>Book of Mormon Matching Game</title>
 </head>
 
@@ -12,38 +11,41 @@
         <div id="app">
             <div>
                 <h1>Book of Mormon Matching Game</h1>
+                <p>Click on a card to start matching!</p>
+                <div class="game">
+                    <h3>Game Type</h3>
+                    <button @click="setGameType('scriptureMastery')">Scripture Mastery</button>
+                </div>
+                <div class="game">
+                    <h3>Game Difficulty</h3>
+                    <button @click="setGameDifficulty('Easy')">Easy</button>
+                    <button @click="setGameDifficulty('Hard')">Hard</button>
+                </div>
             </div>
-            <div class="info">
-                <div :duration="duration" style="margin-bottom: 2rem">
+            <div>
+                <div :duration="duration" style="margin-bottom: 1rem">
                     <span class="label">Time Elapsed:</span>
                     <span class="value">{{ duration }} seconds</span>
                 </div>
-                <div style="margin-bottom: 2rem" :turns="turns">
+                <div style="margin-bottom: 1rem" :turns="turns">
                     <span class="label">Turns:</span>
                     <span class="value">{{ turns }}</span>
                 </div>
             </div>
 
-            <div class="container"><!--look into this. multiple containers??-->
-                <div class="generalPageWrapper">
-                    <div class="container">
-                        <div class="cards">
-                            <div class="card cardFlip" v-for="card in cards" :class="cardClasses[card.topic]" @click="flipCard(card)">
-                                <div v-if="!card.flipped">
-                                    <div class="back"></div>
-                                </div>
-                                <div v-else>
-                                    <div class="front" :card.content="card.content">{{card.content}}</div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="cards">
+                <div class="card cardFlip" v-for="card in cards" :class="cardClasses[card.topic]" @click="flipCard(card)">
+                    <div v-if="!card.flipped">
+                        <div class="back"></div>
+                    </div>
+                    <div v-else>
+                        <div class="front" :card.content="card.content">{{card.content}}</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
-    <footer><a href="https://github.com/powerpufffs/CreativeProject4.git">https://github.com/powerpufffs/CreativeProject4.git</a></footer>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.8/dist/vue.js"></script>
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
