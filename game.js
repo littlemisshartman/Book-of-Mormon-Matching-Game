@@ -116,10 +116,204 @@ let app = new Vue({
 				}
 			],
 			"placesEasy" : [
-
+				{
+					id: "nephi",
+					content: "The City of Nephi",
+				},
+				{
+					id: "nephi",
+					content: "Named after the author of the first book in the Book of Mormon"
+				},
+				{
+					id: "zarahemla",
+					content: "The people gathered here to hear King Benjamin speak",
+				},
+				{
+					id: "zarahemla",
+					content: "Zarahemla"
+				},
+				{
+					id: "mormon",
+					content: "The Waters of Mormon",
+				},
+				{
+					id: "mormon",
+					content: "Alma baptized people here"
+				},
+				{
+					id: "bountiful",
+					content: "Bountiful",
+				},
+				{
+					id: "bountiful",
+					content: "Where Lehi and his family camped before going to the Promised Land"
+				}
 			],
 			"placesHard" : [
-
+				{
+					id: "bountiful",
+					content: "Bountiful",
+				},
+				{
+					id: "bountiful",
+					content: "Southward of Desolation and northward of Zarahemla"
+				},
+				{
+					id: "mormon",
+					content: "The Waters of Mormon",
+				},
+				{
+					id: "mormon",
+					content: "Where Alma taught and baptized people"
+				},
+				{
+					id: "nephi",
+					content: "The City of Nephi",
+				},
+				{
+					id: "nephi",
+					content: '"And it came to pass that Limhi and his people returned to _____, and began to dwell in the land again in peace."'
+				},
+				{
+					id: "zarahemla",
+					content: "Zarahemla",
+				},
+				{
+					id: "zarahemla",
+					content: "King Benjamin gave his speech here"
+				},
+				{
+					id: "sidom",
+					content: "Sidom",
+				},
+				{
+					id: "sidom",
+					content: "Where Alma the Younger established the church"
+				},
+				{
+					id: "ammonihah",
+					content: "Ammonihah",
+				},
+				{
+					id: "ammonihah",
+					content: "A city of wicked people that wouldn't listen to Alma and Amulek"
+				},
+				{
+					id: "lehi-nephi",
+					content: "Ammon finds Limhi's people here",
+				},
+				{
+					id: "lehi-nephi",
+					content: "The Land of Lehi-Nephi"
+				},
+				{
+					id: "angola",
+					content: "Angola",
+				},
+				{
+					id: "angola",
+					content: "Part of the final battle between the nephites and lamanites happened here"
+				}
+			],
+			"peopleEasy" : [
+				{
+					id: "nephi",
+					content: "Nephi",
+				},
+				{
+					id: "nephi",
+					content: "Son of Lehi, great prophet, founder of the Nephites"
+				},
+				{
+					id: "abinadi",
+					content: "Abinadi",
+				},
+				{
+					id: "abinadi",
+					content: "Nephite prophet that preached to King Noah"
+				},
+				{
+					id: "alma",
+					content: "Alma the Elder",
+				},
+				{
+					id: "alma",
+					content: "Nephite prophet that was previously a priest of King Noah"
+				},
+				{
+					id: "mormon",
+					content: "Mormon",
+				},
+				{
+					id: "mormon",
+					content: "A Nephite prophet, military general, and record keeper in the Book of Mormon"
+				}
+			],
+			"peopleHard" : [
+				{
+					id: "nephi",
+					content: "Nephi",
+				},
+				{
+					id: "nephi",
+					content: "Born of goodly parents"
+				},
+				{
+					id: "abinadi",
+					content: "Abinadi",
+				},
+				{
+					id: "abinadi",
+					content: "Nephite prophet whose teachings led to the conversion of Alma"
+				},
+				{
+					id: "alma",
+					content: "Alma the Elder",
+				},
+				{
+					id: "alma",
+					content: "Nephite prophet and founder of the Church in Zarahemla"
+				},
+				{
+					id: "mormon",
+					content: "Mormon",
+				},
+				{
+					id: "mormon",
+					content: "A Nephite prophet, military general, and record keeper in the Book of Mormon"
+				},
+				{
+					id: "moroni",
+					content: "Moroni",
+				},
+				{
+					id: "moroni",
+					content: "The last Nephite prophet in the Book of Mormon"
+				},
+				{
+					id: "nehor",
+					content: "Nehor",
+				},
+				{
+					id: "nehor",
+					content: "Executed for teaching false doctrine and killing Gideon"
+				},
+				{
+					id: "ishmael",
+					content: "Ishmael",
+				},
+				{
+					id: "ishmael",
+					content: "An Ephraimite from Jerusalem"
+				},
+				{
+					id: "jacob",
+					content: "Jacob",
+				},
+				{
+					id: "jacob",
+					content: "Elder son of Lehi born in the wilderness"
+				}
 			]
 		}
 	},
